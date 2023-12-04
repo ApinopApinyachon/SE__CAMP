@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Workshop #HTML - FORM</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Workshop #HTML - FORM</h1>
+            <form action="">
+                <table>
+                    <tr>
+                        <td>
+                            <p>ชื่อ :</p>
+                        </td>
+                        <td>
+                            <input type="text" required>
+                            <div class="labelline">กรุณากรอกชื่อ</div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>สกุล :</p>
+                        </td>
+                        <td>
+                            <input type="text" required>
+                            <div class="labelline">กรุณากรอกนามสกุล</div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>วัน/เดือน/ปีเกิด :</p>
+                        </td>
+                        <td>
+                            <input type="date" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>อายุ :</p>
+                        </td>
+                        <td>
+                            <input type="text" required>
+                            <div class="labelline">กรุณากรอกอายุ</div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>เพศ :</p>
+                        </td>
+                        <td style="display: flex;">
+                            <div class="radio-group">
+                                <div class="input-container">
+                                    <input type="radio" name="sex" required>
+                                    <div class="radio-tile">
+                                        <i class="fa-solid fa-person"></i>
+                                        <label>ชาย</label>
+                                    </div>
+                                </div>
+
+                                <div class="input-container">
+                                    <input type="radio" name="sex" required>
+                                    <div class="radio-tile">
+                                        <i class="fa-solid fa-person-dress"></i>
+                                        <label>หญิง</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>รูป :</p>
+                        </td>
+                        <td>
+                            <input type="file" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>ที่อยู่ :</p>
+                        </td>
+                        <td>
+                            <textarea cols="10" rows="5"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>สีที่ชอบ :</p>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="red">สีแดง</option>
+                                <option value="yellow">สีเหลือง</option>
+                                <option value="green">สีเขียว</option>
+                                <option value="black">สีดำ</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>แนวเพลงที่ชอบ :</p>
+                        </td>
+                        <td>
+                            <input type="radio" name="fav_musicType" required>เพื่อชีวิต</input>
+
+                            <input type="radio" name="fav_musicType" required>ลูกทุ่ง</input>
+
+                            <input type="radio" name="fav_musicType" required>อื่น ๆ </input>
+
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox">ยินยอมให้เก็บข้อมูล</input>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <input class="button" type="reset" value="Reset">
+                            <input class="button" type="submit" value="Submit">
+                        </td>
+                    </tr>
+
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
